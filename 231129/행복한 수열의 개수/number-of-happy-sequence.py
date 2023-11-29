@@ -9,7 +9,7 @@ for row in graph:
         if row[i] == row[i+1]: row_cnt += 1
 
         # 하나의 행에 동일한 값이 m개라면
-        if row_cnt >= m: 
+        if row_cnt == m: 
             cnt += 1
             break
     
@@ -21,7 +21,7 @@ for i in range(n):
         if graph[j][i] == graph[j+1][i]: col_cnt += 1
         
         # 하나의 열에 동일한 값이 m개라면
-        if col_cnt >= m :
+        if col_cnt == m :
             cnt += 1
             break
 
