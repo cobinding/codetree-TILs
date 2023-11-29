@@ -6,7 +6,10 @@ cnt = 0
 for row in graph:
     row_cnt = 1
     for i in range(n-1):
-        if row[i] == row[i+1]: row_cnt += 1
+        if row[i] == row[i+1]:
+            row_cnt += 1
+        else: 
+            row_cnt = 1
 
         # 하나의 행에 동일한 값이 m개라면
         if row_cnt == m: 
@@ -18,7 +21,10 @@ for row in graph:
 for i in range(n):
     col_cnt = 1
     for j in range(n-1):
-        if graph[j][i] == graph[j+1][i]: col_cnt += 1
+        if graph[j][i] == graph[j+1][i]:
+            col_cnt += 1
+        else: 
+            col_cnt = 1
         
         # 하나의 열에 동일한 값이 m개라면
         if col_cnt == m :
