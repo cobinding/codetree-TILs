@@ -1,11 +1,8 @@
 d,h,m=map(int,input().split())
 
+time = (d*24*60 + h*60 + m) - (11*24*60 + 11*60 + 11)
 
-if d < 11 :
+if time < 0 :
     print(-1)
 else:
-    day=(d-11)*24*60
-    hour=abs(h-11)*60
-    minute=abs(m-11)
-    
-    print(day+hour+minute)
+    print(time)
