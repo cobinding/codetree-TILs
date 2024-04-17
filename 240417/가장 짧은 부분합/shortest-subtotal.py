@@ -16,9 +16,10 @@ for i in range(1,n+1):
     for j in range(i,n+1):
         total += arr[j]
         
-        if total >= s: 
-            ans=min(ans,j-i+1)
-            total -= arr[i]
+    if total >= s: 
+        ans=min(ans,j-i)
+    
+    total -= arr[i]
 
 if ans == INT_MAX: ans=-1
 
