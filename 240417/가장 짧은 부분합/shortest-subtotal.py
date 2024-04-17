@@ -12,12 +12,15 @@ ans=INT_MAX
 for i in range(1,n+1):
     # i가 시작점, 시작점마다 total 초기화!
     total=0 
+    flag=False
     for j in range(i,n+1):
         total += arr[j]
     
         if total >= s:
             ans=min(ans,j-i+1)
+            flag=True
             break
+    if flag: break
 
 if ans == INT_MAX: ans = -1
 
