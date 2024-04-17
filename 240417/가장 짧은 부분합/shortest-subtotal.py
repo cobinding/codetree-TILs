@@ -17,6 +17,7 @@ for i in range(1,n+1):
     
         if total >= s:
             ans=min(ans,j-i+1)
+            break
 
 if ans == INT_MAX: ans = -1
 
