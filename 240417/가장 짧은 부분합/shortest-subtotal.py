@@ -18,7 +18,7 @@ for i in range(1,n+1):
         
     if total < s: break
     
-    ans=min(ans,j-i)
+    ans=min(ans,j-i+1)
     
     total -= arr[i]
 
