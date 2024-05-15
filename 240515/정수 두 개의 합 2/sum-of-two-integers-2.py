@@ -8,14 +8,15 @@ arr.sort()
 
 e=n-1
 cnt=0
+s,e=0,n-1
 
 for s in range(n):
-    while e != 1 and arr[s]+arr[e] > k:
+    if e != 1 and arr[s]+arr[e] > k:
         e -= 1
-    
+
     if e <= s :
         break
 
-    cnt += e-s
+    cnt += 1
 
 print(cnt)
