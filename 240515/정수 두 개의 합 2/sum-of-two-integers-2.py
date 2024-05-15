@@ -6,11 +6,10 @@ arr=[int(input()) for _ in range(n)]
 
 arr.sort()
 
-e=n-1
 cnt=0
 s,e=0,n-1
 
-for s in range(n):
+for s in range(n+1):
     if e != 1 and arr[s]+arr[e] > k:
         e -= 1
 
