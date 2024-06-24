@@ -22,4 +22,4 @@ while True:
     
     right += 1
 
-print(section)
+print(-1) if section==100000 else print(section)
