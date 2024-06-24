@@ -3,7 +3,7 @@ arr=list(map(int,input().split()))
 
 left,right=0,0
 target=0
-ans=10000 # 원소 값의 최대는 10,000
+ans=float('inf') # 원소 값의 최대는 10,000
 
 while True:
     target+=arr[right]
