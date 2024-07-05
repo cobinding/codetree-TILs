@@ -15,8 +15,9 @@ while start < end and start <= 0:
         end -= 1
     elif sum_numbers < 0 :
         start += 1
-    else: break
-    
+    else: 
+        print(0)
+        exit(1)
     
 
 print(abs(min_sum))
