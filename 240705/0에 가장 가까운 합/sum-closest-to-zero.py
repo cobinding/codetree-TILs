@@ -15,7 +15,5 @@ while start < end and start <= 0:
         end -= 1
     elif sum_numbers < 0 :
         start += 1
-    else: 
-        break
 
-print(abs(min_sum))
+print(min_sum)
