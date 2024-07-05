@@ -4,7 +4,7 @@ n=int(input())
 arr=sorted(map(int,input().split()))
 
 start,end=0,n-1
-min_sum=1000000000
+min_sum=2000000000
 
 while start <= end and start <= 0:
      
