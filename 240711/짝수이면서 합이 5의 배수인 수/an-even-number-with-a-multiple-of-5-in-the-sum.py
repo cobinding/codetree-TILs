@@ -19,3 +19,7 @@ def is_sum_mul_5(n):
 
 is_even_true = is_even(n)
 print("No") if not is_even_true else print(is_sum_mul_5(n))
+
+### 각 자리의 숫자의 합 
+### n//10 + n%10
+### 두 자리 수니까 위처럼 가능
