@@ -1,12 +1,9 @@
 n=int(input())
 
 # 1. 짝수인지 검토
-flag=False
 def is_even(n): 
-    
-    if n%2 == 0:
-        flag=True
-    
+    if n%2 == 0: flag=True
+    else: flag=False
     return flag
 
 # 2. 5의 배수인지 검토
