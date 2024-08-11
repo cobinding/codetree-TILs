@@ -8,7 +8,7 @@ for _ in range(n):
     x = int(x)
  
     if direction == "L":
-        for i in range(recent-x, recent):
+        for i in range(recent-1, recent-x-1, -1):
             line[i] += 1
         recent -= x
 
