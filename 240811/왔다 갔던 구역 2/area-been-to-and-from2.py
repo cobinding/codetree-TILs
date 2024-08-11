@@ -8,7 +8,7 @@ for _ in range(n):
     x = int(x)
  
     if direction == "L":
-        for i in range(recent, recent-x, -1):
+        for i in range(recent-x, recent):
             line[i] += 1
         recent -= x
 
@@ -21,5 +21,8 @@ cnt = 0
 for item in line:
     if item >= 2: 
         cnt += 1
+
+"""for i in range(6, 1, -1): # 5, 4, 3, 2
+    print(i)"""
 
 print(cnt)
