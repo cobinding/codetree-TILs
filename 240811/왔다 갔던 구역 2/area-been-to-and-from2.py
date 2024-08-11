@@ -2,18 +2,20 @@ line = [0 for _ in range(2001)]
 
 n = int(input())
 recent = 1000
+
 for _ in range(n):
     x, direction = input().split()
+    x = int(x)
  
     if direction == "L":
-        for i in range(recent, recent-int(x), -1):
+        for i in range(recent, recent-x, -1):
             line[i] += 1
-        recent = recent-int(x)
+        recent -= x
 
     elif direction == "R":
-        for i in range(recent, recent+int(x)):
+        for i in range(recent, recent+x):
             line[i] += 1
-        recent = recent + int(x)
+        recent += x
 
 cnt = 0
 for item in line:
