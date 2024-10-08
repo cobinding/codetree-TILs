@@ -7,7 +7,7 @@ answer = []
 # 중복없는 순열
 def permutations(curr_num):
     if curr_num == n+1 :
-        print(answer)
+        print(*answer)
         return
 
     # 1부터 n까지 순열을 만드는 과정
